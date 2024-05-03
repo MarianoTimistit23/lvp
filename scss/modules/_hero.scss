@@ -1,0 +1,12 @@
+.hero {
+    background-color: $secondary;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-container {
+        color: $white;
+    }
+}

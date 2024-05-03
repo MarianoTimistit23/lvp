@@ -1,0 +1,29 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: $white;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-container {
+        background-color: $secondary;
+        min-width: 600px;
+        padding: 20px 0;
+    }
+
+    &__nav-container {
+        background: linear-gradient(90deg, rgba(27,38,69,1) 0%, rgba(77,205,201,1) 100%);
+        width: 100%;
+        padding: 20px 0;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 24px;
+        }
+    }
+}
