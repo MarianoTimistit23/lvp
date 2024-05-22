@@ -1,0 +1,48 @@
+@use "sass:map";
+
+.our-services {
+    color: $white;
+    background-color: $secondary;
+
+    &__title {
+        color: $white;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: .4fr 1fr;
+    }
+
+    &__index {
+        margin-right: 20px;
+    }
+
+    .tab-link {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: map.get($font-weights, 'light');
+        padding: 10px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        transition: .3s linear;
+
+        &:hover {
+           color: $primary;
+           transition: .3s linear;
+        }
+    }
+    
+    .tab-content {
+        display: none;
+        background-color: rgba($white, .1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px;
+
+        &.active {
+            display: block;
+        }
+    }
+}

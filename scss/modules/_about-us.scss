@@ -1,0 +1,18 @@
+.about-us {
+
+    &__title {
+        color: $secondary;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__text-container {
+        width: 80%;
+        margin: 0 auto;
+        
+        p {
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 /* -- Reset -- */
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -22,12 +22,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
-}
-
-body {
-    margin-top: 90px;
 }
 
 header,
@@ -64,7 +59,7 @@ table {
 
 /* -- Global Styles -- */
 section {
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .container-xl {
@@ -78,4 +73,14 @@ section {
 .container-lg {
     width: 100%; max-width: 1180px;
     padding-left: 10px; padding-right: 10px; 
+}
+
+h1 {
+    font-size: 62px;
+    line-height: 68px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 48px; 
 }
