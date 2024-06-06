@@ -1,18 +1,32 @@
 .about-us {
 
-    &__title {
-        color: $secondary;
-        text-align: center;
-        margin-bottom: 24px;
+    &__container {
+        display: flex;
+        gap: 62px;
+    }
+
+    &__image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 420px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
     }
 
     &__text-container {
-        width: 80%;
-        margin: 0 auto;
         
         p {
-            text-align: justify;
             margin-bottom: 12px;
         }
+    }
+
+    &__title {
+        color: $secondary;
+        margin-bottom: 32px;
     }
 }

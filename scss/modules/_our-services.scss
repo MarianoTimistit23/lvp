@@ -6,31 +6,64 @@
 
     &__title {
         color: $white;
-        text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 42px;
     }
 
     &__wrapper {
         display: grid;
         grid-template-columns: .4fr 1fr;
+        gap: 40px;
     }
 
     &__index {
-        margin-right: 20px;
+        overflow: hidden;
     }
 
     .tab-link {
+        position: relative;
         font-size: 22px;
         line-height: 28px;
         font-weight: map.get($font-weights, 'light');
-        padding: 10px;
-        margin-bottom: 5px;
+        padding-right: 30px;
+        margin-bottom: 16px;
         cursor: pointer;
         transition: .3s linear;
 
-        &:hover {
-           color: $primary;
-           transition: .3s linear;
+        &::before,
+        &::after {
+            content: url('images/icons/icon-chevron-right--primary.svg');
+            position: absolute;
+            top: 50%;
+            transition: .3s linear;
+        }
+
+        &::before {
+            left: 0;
+            transform: translate(-100%, -50%);
+        }
+
+        &::after {
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        &:hover,
+        &.active {
+            color: $primary;
+            transition: .3s linear;
+        }
+
+        &.active {
+            padding-right: 0;
+            padding-left: 40px;
+
+            &::before {
+                transform: translate(0%, -50%);
+            }
+
+            &::after {
+                transform: translate(100%, -50%);
+            }
         }
     }
     
@@ -43,6 +76,11 @@
 
         &.active {
             display: block;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 22px;
         }
     }
 }

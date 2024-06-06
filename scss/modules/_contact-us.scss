@@ -1,0 +1,63 @@
+.contact-us {
+
+    &__title {
+        color: $secondary;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__subcontainer {
+        display: flex;
+        border-radius: 12px;
+    }
+
+    /* -- Form --*/
+    form {
+        .form-row {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .form-input {
+            width: 100%;
+        }
+    
+        label {
+            display: block;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+    
+        input,
+        textarea {
+            border: 1px solid $secondary;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .form-submit-btn {
+            border-radius: 16px;
+        }
+    }
+
+    /* -- Contact Info -- */
+    &__contact-info {
+        color: $white;
+        background-color: $secondary;
+        border-radius: 12px;
+    }
+
+    &__contact-phone,
+    &__contact-email,
+    &__contact-address {
+        display: flex;
+        gap: 12px;
+        color: $white;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

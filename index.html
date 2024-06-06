@@ -58,15 +58,25 @@
     <!-- About Us -->
     <section class="about-us">
         <div class="about-us__container container-lg">
-            <!-- Title -->
-            <h2 class="about-us__title">About Us</h2>
-            <!-- Text-->
-            <div class="about-us__text-container">
-                <p>Welcome to LVP Techonologies, your premier technology partner based in the vibrant city of Miami, Florida. With a commitment to innovation and excellence, we specialize in providing comprehensive technology solutions tailored to the unique needs of our clients. Our services include custom web development, bespoke software development, cutting-edge network security, and seamless electronic payment systems.</p>
-                <p>At LVP Techonologies, we pride ourselves on our team of highly skilled professionals who bring their passion for technology and years of industry experience to deliver solutions that not only meet but exceed our clients' expectations. Our approach combines technical expertise with a deep understanding of business dynamics, ensuring that every project we undertake enhances operational efficiency and drives business growth.</p>
-                <p>Our mission is to empower businesses through technology, providing tools that are not only efficient but also secure and easy to use. Whether you're looking to enhance your online presence, streamline your operations, secure your network, or simplify your payment processes, LVP Techonologies is here to help you achieve your goals.</p>
-                <p>Join us on your journey to digital transformation, and let us help you harness the power of technology to thrive in today's competitive marketplace.</p>
+
+            <!-- Image -->
+            <div class="about-us__image-container">
+                <img src="images/about-us-image.png" alt="About Us Image">
             </div>
+
+            <!-- Text-->
+            <div class="about-us__content-container">
+                <!-- Title -->
+                <h2 class="about-us__title">About Us</h2>
+                <!-- Description -->
+                <div class="about-us__text-container">
+                    <p>Welcome to LVP Techonologies, your premier technology partner based in the vibrant city of Miami, Florida. With a commitment to innovation and excellence, we specialize in providing comprehensive technology solutions tailored to the unique needs of our clients. Our services include custom web development, bespoke software development, cutting-edge network security, and seamless electronic payment systems.</p>
+                    <p>At LVP Techonologies, we pride ourselves on our team of highly skilled professionals who bring their passion for technology and years of industry experience to deliver solutions that not only meet but exceed our clients' expectations. Our approach combines technical expertise with a deep understanding of business dynamics, ensuring that every project we undertake enhances operational efficiency and drives business growth.</p>
+                    <p>Our mission is to empower businesses through technology, providing tools that are not only efficient but also secure and easy to use. Whether you're looking to enhance your online presence, streamline your operations, secure your network, or simplify your payment processes, LVP Techonologies is here to help you achieve your goals.</p>
+                    <p>Join us on your journey to digital transformation, and let us help you harness the power of technology to thrive in today's competitive marketplace.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -105,24 +115,72 @@
     <!-- Contact Us -->
     <section class="contact-us">
         <div class="contact-us__container container-lg">
-            <h3>Contact Us</h3>
-            <form action="">
-                <!-- Name -->
-                <div>
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname">
+            <!-- Title -->
+            <h2 class="contact-us__title">Get in touch</h2>
+            <!-- Subcontainer -->
+            <div class="contact-us__subcontainer">
+                <!--Form  -->
+                <div class="contact-us__contact-form-container">
+                    <form action="">
+                        <!-- Name -->
+                        <div class="form-row">
+                            <div class="form-input">
+                                <label for="fname">First name:</label>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+                            <div class="form-input">
+                                <label for="lname">Last name:</label>
+                                <input type="text" id="lname" name="lname">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="form-row">
+                            <div class="form-input">
+                                <label for="email">Enter your email:</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+                        <!-- Message -->
+                        <div class="form-row">
+                            <div class="form-input">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message"></textarea>
+                            </div>
+                        </div>
+                        <!-- Submit -->
+                        <input type="submit" value="Submit" class="form-submit-btn btn btn--primary">
+                    </form>
                 </div>
-                <!-- Email -->
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email">
-                <!-- Message -->
-                <label for="email">Message</label>
-                <textarea name="" id=""></textarea>
-                <!-- Submit -->
-                <input type="submit" value="Submit">
-            </form>
+                <!-- Contact Info -->
+                <div class="contact-us__contact-info">
+                    <a href="#" class="contact-us__contact-phone">
+                        <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_39_2)">
+                                <path d="M256 48C141.1 48 48 141.1 48 256V296C48 309.3 37.3 320 24 320C10.7 320 0 309.3 0 296V256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256V400.1C512 448.7 472.6 488.1 423.9 488.1L313.6 488C305.3 502.3 289.8 512 272 512H240C213.5 512 192 490.5 192 464C192 437.5 213.5 416 240 416H272C289.8 416 305.3 425.7 313.6 440L424 440.1C446.1 440.1 464 422.2 464 400.1V256C464 141.1 370.9 48 256 48ZM144 208H160C177.7 208 192 222.3 192 240V352C192 369.7 177.7 384 160 384H144C108.7 384 80 355.3 80 320V272C80 236.7 108.7 208 144 208ZM368 208C403.3 208 432 236.7 432 272V320C432 355.3 403.3 384 368 384H352C334.3 384 320 369.7 320 352V240C320 222.3 334.3 208 352 208H368Z" fill="white"/>
+                            </g>
+                        </svg>
+                        
+                        +1 (405) 5934484
+                    </a>
+                    <a href="#" class="contact-us__contact-email">
+                        <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_39_4)">
+                                <path d="M215.4 96H144H107.8H96V104.8V144V184.4V273.4L0.2 202.5C1.8 184.4 11.1 167.6 25.9 156.7L48 140.3V96C48 69.5 69.5 48 96 48H172.6L222.5 11.1C232.2 3.9 243.9 0 256 0C268.1 0 279.8 3.9 289.5 11L339.4 48H416C442.5 48 464 69.5 464 96V140.3L486.1 156.7C500.9 167.6 510.2 184.4 511.8 202.5L416 273.4V184.4V144V104.8V96H404.2H368H296.6H215.4ZM0 448V242.1L217.6 403.3C228.7 411.5 242.2 416 256 416C269.8 416 283.3 411.6 294.4 403.3L512 242.1V448C512 483.3 483.3 512 448 512H64C28.7 512 0 483.3 0 448ZM176 160H336C344.8 160 352 167.2 352 176C352 184.8 344.8 192 336 192H176C167.2 192 160 184.8 160 176C160 167.2 167.2 160 176 160ZM176 224H336C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H176C167.2 256 160 248.8 160 240C160 231.2 167.2 224 176 224Z" fill="white"/>
+                            </g>
+                            <defs>
+                        </svg>
+                        lvp@lvptechnologies.com
+                    </a>
+                    <a href="#" class="contact-us__contact-address">
+                        <svg width="576" height="512" viewBox="0 0 576 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_39_6)">
+                                <path d="M288 0C218.4 0 162 56.4 162 126C162 182.3 244.4 284.8 275.9 322C282.3 329.5 293.7 329.5 300.1 322C331.7 284.8 414 182.3 414 126C414 56.4 357.6 0 288 0ZM288 168C264.8 168 246 149.2 246 126C246 102.8 264.8 84 288 84C311.2 84 330 102.8 330 126C330 149.2 311.2 168 288 168ZM20.1 216C14.1666 218.377 9.08103 222.476 5.49858 227.77C1.91614 233.063 0.00100875 239.308 0 245.7L0 496C0 507.3 11.4 515.1 21.9 510.9L160 448V214.9C151.2 198.9 143.9 183.4 138.7 168.5L20.1 216ZM288 359.7C273.9 359.7 260.6 353.5 251.5 342.7C231.8 319.5 210.9 293.1 192 266V448L384 512V266C365.1 293.1 344.2 319.5 324.5 342.7C315.4 353.5 302.1 359.7 288 359.7ZM554.1 161.2L416 224V512L555.9 456C561.833 453.623 566.919 449.524 570.501 444.23C574.084 438.937 575.999 432.692 576 426.3V176C576 164.7 564.6 156.9 554.1 161.1V161.2Z" fill="white"/>
+                            </g>
+                        </svg>                        
+                        1801 NE 123Rd Street, North Miami, Florida, FL33181
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
