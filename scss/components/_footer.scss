@@ -1,9 +1,89 @@
+@use "sass:map";
+
 .footer {
     background-color: $secondary;
-    padding: 40px 0 20px;
+    padding: 40px 0 16px;
+    color: $white;
 
-    &__container {
+    &__subcontainer {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 42px;
+    }
+
+    &__left-side-container {
+
+        p {
+            font-size: 14px;
+
+            &:first-of-type {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 280px;
+        margin-bottom: 24px;
+    }
+
+    &__right-side-container {
+        display: flex;
+        gap: 52px;
+        
+        a {
+            color: $white;
+            transition: .3s linear;
+        }
+    }
+    
+    &__menu {
+
+        li {
+            margin-bottom: 14px;
+
+            a {
+                &:hover {
+                    color: $primary;
+                    transition: .3s linear;
+                }
+            }
+        }
+    }
+    
+    &__contact-info {
+
+        a {
+            display: flex;
+            font-size: 14px;
+            font-weight: map.get($font-weights, 'medium');
+            gap: 12px;
+            margin-bottom: 10px;
+    
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &__legal {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 20%;
+            width: 60%;
+            height: 1px;
+            background-color: rgba($white, .7);
+        }
+
+        p {
+            font-size: 12px;
+            color: rgba($white, .7);
+            text-align: center;
+            padding-top: 16px;
+        }
     }
 }

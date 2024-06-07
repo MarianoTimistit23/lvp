@@ -1,9 +1,8 @@
 @use "sass:map";
-@import "../variables";
 
 .hero {
     background: linear-gradient(60deg, $secondary 0%, $secondary 45%, $primary 100%);
-    padding-top: 90px;
+    padding-top: 130px;
     
     &__container {
         display: flex;

@@ -85,6 +85,42 @@ h2 {
     line-height: 48px; 
 }
 
+/* -- Form --*/
+form {
+    .form-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    .form-input {
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 4px;
+    }
+
+    input,
+    textarea {
+        border: 1px solid $secondary;
+        padding: 8px;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .form-submit-btn {
+        border-radius: 16px;
+    }
+}
+
 /* -- Utility Classes -- */
 .btn {
     appearance: none;
@@ -106,5 +142,15 @@ h2 {
             border: 1px solid $primary;
             transition: .3s linear;
         }
+    }
+}
+
+/* --- Animations --- */
+.js-animation-fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+
+    &.js-animation-visible {
+        opacity: 1;
     }
 }

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .contact-us {
 
     &__title {
@@ -8,37 +10,8 @@
 
     &__subcontainer {
         display: flex;
-        border-radius: 12px;
-    }
-
-    /* -- Form --*/
-    form {
-        .form-row {
-            display: flex;
-            margin-bottom: 12px;
-        }
-
-        .form-input {
-            width: 100%;
-        }
-    
-        label {
-            display: block;
-            font-size: 14px;
-            line-height: 16px;
-            margin-bottom: 4px;
-        }
-    
-        input,
-        textarea {
-            border: 1px solid $secondary;
-            border-radius: 4px;
-            width: 100%;
-        }
-
-        .form-submit-btn {
-            border-radius: 16px;
-        }
+        justify-content: center;
+        gap: 20px;
     }
 
     /* -- Contact Info -- */
@@ -46,18 +19,28 @@
         color: $white;
         background-color: $secondary;
         border-radius: 12px;
+        width: 100%;
+        max-width: 320px;
+        padding: 24px;
+    }
+
+    &__contact-info-title {
+        margin-bottom: 24px;
     }
 
     &__contact-phone,
     &__contact-email,
     &__contact-address {
         display: flex;
+        font-size: 14px;
+        font-weight: map.get($font-weights, 'medium');
         gap: 12px;
         color: $white;
+        margin-bottom: 8px;
 
         svg {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
         }
     }
 }

@@ -1,11 +1,21 @@
-@import "../variables";
+@use "sass:map";
 
 .header {
     background: transparent;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
     color: $white;
+    padding: 24px 0;
+    transition: .3s linear;
+
+    &.active {
+        background-color: $secondary;
+        box-shadow: 0 0 8px 2px rgba($black, .4);
+        padding: 10px 0;
+        transition: .3s linear;
+    }
     
     &__container {
         display: flex;
@@ -13,18 +23,35 @@
     }
 
     &__logo-container {
-        min-width: 600px;
-        padding: 20px 0;
+        max-width: 220px;
+    }
+
+    &__logo {
+        width: 100%;
+        height: auto;
     }
 
     &__nav-container {
-        width: 100%;
-        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
         ul {
             display: flex;
             justify-content: flex-end;
-            gap: 24px;
+            gap: 36px;
+
+            a {
+                font-weight: map.get($font-weights, 'medium');
+                color: $white;
+                text-transform: uppercase;
+                transition: .3s linear;
+
+                &:hover {
+                    color: $primary;
+                    transition: .3s linear;
+                }
+            }
         }
     }
 }
