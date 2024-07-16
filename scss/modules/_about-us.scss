@@ -3,6 +3,12 @@
     &__container {
         display: flex;
         gap: 62px;
+
+        // Mobile
+        @media (max-width: 768px) {
+           flex-wrap: wrap;
+           gap: 42px;
+        }
     }
 
     &__image-container {
@@ -10,6 +16,11 @@
         align-items: center;
         justify-content: center;
         min-width: 420px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            min-width: auto;
+        }
 
         img {
             width: 100%;
@@ -22,11 +33,18 @@
         
         p {
             margin-bottom: 12px;
+            text-align: justify;
         }
     }
 
     &__title {
         color: $secondary;
         margin-bottom: 32px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     }
 }

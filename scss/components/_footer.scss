@@ -9,6 +9,11 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 42px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__left-side-container {

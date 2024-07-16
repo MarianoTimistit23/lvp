@@ -41,6 +41,29 @@
                 </ul>
             </nav>
 
+            <!-- Mobile Nav -->
+            <nav class="header__nav-container-mobile">
+
+                <!-- Hamburger Menu -->
+                <div class="header__hamburger-menu-container js-hamburger-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#our-services">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </header>
 
@@ -49,9 +72,9 @@
         <div class="hero__container container-lg">
 
             <!-- Text-->
-            <div class="hero__text-container">
-                <h1 class="hero__title">LVP Techonlogies</h1>
-                <p class="hero__subtitle">Transforming Ideas into Digital Success</p>
+            <div class="hero__text-container js-animation-fade-in-container">
+                <h1 class="hero__title js-animation-fade-in-children">LVP Techonlogies</h1>
+                <p class="hero__subtitle js-animation-fade-in-children">Transforming Ideas into Digital Success</p>
             </div>
 
             <!-- Image -->
@@ -128,23 +151,23 @@
             <div class="contact-us__subcontainer js-animation-fade-in">
                 <!--Form  -->
                 <div class="contact-us__contact-form-container">
-                    <form action="">
+                    <form id="js-contact-form">
                         <!-- Name -->
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="fname">First name:</label>
-                                <input type="text" id="fname" name="fname">
+                                <input type="text" id="fname" name="fname" required>
                             </div>
                             <div class="form-input">
                                 <label for="lname">Last name:</label>
-                                <input type="text" id="lname" name="lname">
+                                <input type="text" id="lname" name="lname" required>
                             </div>
                         </div>
                         <!-- Email -->
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="email">Email:</label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                             </div>
                         </div>
                         <!-- Message -->
@@ -157,6 +180,18 @@
                         <!-- Submit -->
                         <input type="submit" value="Submit" class="form-submit-btn btn btn--primary">
                     </form>
+                    <div class="loader-container js-loader">
+                        <div class="loader"></div>
+                    </div>
+                    <div class="success-message">
+                        <div class="svg-container">    
+                            <svg class="ft-green-tick" xmlns="http://www.w3.org/2000/svg" height="65" width="65" viewBox="0 0 48 48" aria-hidden="true">
+                                <circle class="circle" fill="#5bb543" cx="24" cy="24" r="22"/>
+                                <path class="tick" fill="none" stroke="#FFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14 27l5.917 4.917L34 17"/>
+                            </svg>
+                        </div>
+                        <p>Thank you! Your message has been sent.</p> 
+                    </div>
                 </div>
                 <!-- Contact Info -->
                 <div class="contact-us__contact-info">
