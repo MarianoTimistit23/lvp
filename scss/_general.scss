@@ -102,6 +102,12 @@ h1 {
 h2 {
     font-size: 42px;
     line-height: 48px; 
+
+    // Mobile
+    @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 38px; 
+    }
 }
 
 /* -- Form --*/

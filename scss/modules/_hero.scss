@@ -28,6 +28,11 @@
     &__image-container {
         max-width: 520px;
 
+        // Mobile
+        @media (max-width: 768px) {
+            display: none;
+        }
+
         img {
             width: 100%;
             height: auto;

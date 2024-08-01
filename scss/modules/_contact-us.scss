@@ -11,11 +11,12 @@
     &__subcontainer {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 50px;
 
         // Mobile
         @media (max-width: 768px) {
             flex-wrap: wrap;
+            gap: 30px;
         }
     }
 
@@ -120,6 +121,7 @@
         // Mobile
         @media (max-width: 768px) {
             order: -1;
+            max-width: none;
         }
     }
 

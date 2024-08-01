@@ -11,6 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     /**
+     * Typed animation
+     */
+    let typing = new Typed(".js-typed-animation", {
+        strings: ["", "your business operations.", "your digital security.", "your transaction capabilities.", "ideas into digital success."],
+        typeSpeed: 30,
+        backSpeed: 50,
+        smartBackspace: false, 
+        loop: false,
+    });
+    
+    /**
      * Animate on scroll (Intersection Observer API)
      */
     const faders = document.querySelectorAll('.js-animation-fade-in, .js-animation-fade-in-container');
