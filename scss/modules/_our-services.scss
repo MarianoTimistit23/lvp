@@ -9,10 +9,34 @@
         margin-bottom: 42px;
     }
 
-    &__wrapper {
+    &__wrapper-desktop {
         display: grid;
         grid-template-columns: .4fr 1fr;
         gap: 40px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__wrapper-mobile {
+
+        div {
+            margin-bottom: 32px;
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+            color: $primary;
+            margin-bottom: 12px;
+        }
+
+        // Mobile
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 
     &__index {

@@ -19,6 +19,7 @@
 
         // Mobile
         @media (max-width: 768px) {
+            width: 100%;
             min-width: auto;
         }
 
@@ -26,6 +27,12 @@
             width: 100%;
             height: auto;
             border-radius: 12px;
+
+            // Mobile
+            @media (max-width: 768px) {
+                max-height: 240px;
+                object-fit: cover;
+            }
         }
     }
 

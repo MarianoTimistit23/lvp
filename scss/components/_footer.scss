@@ -35,6 +35,12 @@
     &__right-side-container {
         display: flex;
         gap: 52px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 32px;
+        }
         
         a {
             color: $white;
@@ -43,6 +49,12 @@
     }
     
     &__menu {
+
+        // Mobile
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-top: 42px;
+        }
 
         li {
             margin-bottom: 14px;

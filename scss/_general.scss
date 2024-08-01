@@ -60,6 +60,11 @@ table {
 /* -- Global Styles -- */
 section {
     padding: 60px 0;
+
+    // Mobile
+    @media (max-width: 768px) {
+        padding: 40px 0;
+    }
 }
 
 .container-xl,
