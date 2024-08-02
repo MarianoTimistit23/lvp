@@ -3,6 +3,12 @@
 .hero {
     background: linear-gradient(60deg, $secondary 0%, $secondary 45%, $primary 100%);
     padding-top: 130px;
+
+    // Mobile
+    @media (max-width: 768px) {
+        padding-top: 160px;
+        padding-bottom: 80px;
+    }
     
     &__container {
         display: flex;
