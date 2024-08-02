@@ -25,6 +25,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body {
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
 header,
 section,
 footer {
@@ -59,10 +65,12 @@ table {
 
 /* -- Global Styles -- */
 section {
+    scroll-margin-top: 80px;
     padding: 60px 0;
 
     // Mobile
     @media (max-width: 768px) {
+        scroll-margin-top: 60px;
         padding: 40px 0;
     }
 }

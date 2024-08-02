@@ -29,6 +29,11 @@
         line-height: 28px;
         font-weight: map.get($font-weights, 'light');;
         margin-top: 24px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            min-height: 58px;
+        }
     }
 
     &__image-container {
