@@ -9,7 +9,7 @@
     }
 
     &__title {
-        color: $primary;
+        color: $secondary;
         text-align: center;
         margin-bottom: 42px;
     }
@@ -38,14 +38,14 @@
         & > h3 {
             font-size: 42px;
             line-height: 48px;
-            color: $primary;
+            color: $secondary;
             text-align: center;
             margin: 42px 0;
         }
 
         .pricing__plan {
             width: 50%;
-            border: 2px dashed $primary;
+            border: 2px dashed $secondary;
             padding: 32px;
             margin: 0 auto;
 
@@ -78,7 +78,7 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: $white;
-        border: 1px solid $primary;
+        border: 1px solid $secondary;
         border-radius: 8px;
         padding: 52px 20px 32px;
         transform: scale(1);
@@ -105,7 +105,7 @@
             font-size: 24px;
             line-height: 28px;
             font-weight: 400;
-            color: $primary;
+            color: $secondary;
             text-align: center;
             margin-bottom: 6px;
         }
@@ -115,7 +115,7 @@
         font-size: 48px;
         line-height: 52px;
         font-weight: 700;
-        color: $primary;
+        color: $secondary;
         text-align: center;
         margin-bottom: 24px;
 
@@ -188,7 +188,7 @@
                 height: 16px;
 
                 &-active {
-                    color: $primary;
+                    color: $secondary;
                 }
             }
         }
