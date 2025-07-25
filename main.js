@@ -119,6 +119,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.tab-content').classList.add('active');
 
     /**
+     * Pricing Slider (mobile)
+     */
+    const swiper = new Swiper('.js-pricing-slider', {
+        loop: false,
+        slidesPerView: 1.2,
+        spaceBetween: 16, 
+        centeredSlides: true, 
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    });
+
+    /**
      * Contact Form
      */
     const form = document.getElementById('js-contact-form');
